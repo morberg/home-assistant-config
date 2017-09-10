@@ -1,0 +1,154 @@
+- action:
+  - alias: Turn on Apple TV
+    data:
+      entity_id: remote.apple_tv
+    service: remote.turn_on
+  trigger:
+  - entity_id: media_player.sony_tv
+    from: 'off'
+    platform: state
+    to: 'on'
+  id: apple-tv-on
+  alias: "TV: Sony TV p\xE5 (alltid)"
+- action:
+  - alias: Turn off Apple TV
+    data:
+      entity_id: remote.apple_tv
+    service: remote.turn_off
+  trigger:
+  - entity_id: media_player.sony_tv
+    from: 'on'
+    platform: state
+    to: 'off'
+  id: apple-tv-off
+  alias: 'TV: Sony TV av (alltid)'
+  condition: []
+- action:
+  - data:
+      entity_id: scene.skymning
+    service: scene.turn_on
+  alias: "Solnedg\xE5ng: T\xE4nd lampor"
+  condition: []
+  id: '1503225225553'
+  trigger:
+  - event: sunset
+    platform: sun
+- action:
+  - data:
+      entity_id: group.botten
+    service: light.turn_off
+  alias: "Tid: 1:00 -> Sl\xE4ck alla lampor p\xE5 bottenv\xE5ning"
+  condition: []
+  id: '1503225347200'
+  trigger:
+  - at: 01:00:00
+    platform: time
+- action:
+  - alias: "T\xE4nd lampor"
+    data:
+      entity_id: scene.skymning
+    service: scene.turn_on
+  alias: "N\xE4rvaro: n\xE5gon kommer hem (efter solnedg\xE5ng) -> T\xE4nd lampor"
+  condition:
+  - after: sunset
+    condition: sun
+  id: '1503339738865'
+  trigger:
+  - entity_id: group.familj
+    from: not_home
+    platform: state
+    to: home
+- action:
+  - data:
+      color_temp: 454.54545454545456
+      entity_id: light.hall
+    service: light.turn_on
+  alias: "T\xE4nd: Hall (efter solnedg\xE5ng) -> Varmt ljus"
+  condition:
+  - after: sunset
+    condition: sun
+  id: '1503417745956'
+  trigger:
+  - entity_id: light.hall
+    from: 'off'
+    platform: state
+    to: 'on'
+- action:
+  - data:
+      entity_id: scene.mysljus
+    service: scene.turn_on
+  alias: 'Tid: 21:00 -> Mysljus'
+  condition: []
+  id: '1503510539766'
+  trigger:
+  - at: '21:00'
+    platform: time
+- action:
+  - data:
+      entity_id: group.all_lights
+    service: light.turn_off
+  alias: "N\xE4rvaro: Ingen i familjen hemma -> Sl\xE4ck alla lampor"
+  condition: []
+  id: '1503674783087'
+  trigger:
+  - entity_id: group.familj
+    from: home
+    platform: state
+    to: not_home
+- action:
+  - alias: TV-ljus
+    data:
+      entity_id: scene.play
+    service: scene.turn_on
+  alias: "TV: Apple TV play (efter solnedg\xE5ng)"
+  condition:
+  - after: sunset
+    condition: sun
+  id: '1505033631846'
+  trigger:
+  - entity_id: media_player.apple_tv
+    from: paused
+    platform: state
+    to: playing
+- action:
+  - data:
+      entity_id: scene.paus
+    service: scene.turn_on
+  alias: "TV: Apple TV paus (efter solnedg\xE5ng)"
+  condition:
+  - after: sunset
+    condition: sun
+  id: '1505033947450'
+  trigger:
+  - entity_id: media_player.apple_tv
+    from: playing
+    platform: state
+    to: paused
+- action:
+  - data:
+      entity_id: scene.mysljus
+    service: scene.turn_on
+  alias: "TV: Sony TV av (efter solnedg\xE5ng) -> Mysljus"
+  condition:
+  - after: sunset
+    condition: sun
+  id: '1505042736038'
+  trigger:
+  - entity_id: media_player.sony_tv
+    from: 'on'
+    platform: state
+    to: 'off'
+- action:
+  - data:
+      entity_id: scene.play
+    service: scene.turn_on
+  alias: "TV: Sony TV p\xE5 (efter solnedg\xE5ng)"
+  condition:
+  - after: sunset
+    condition: sun
+  id: '1505042929615'
+  trigger:
+  - entity_id: media_player.sony_tv
+    from: 'off'
+    platform: state
+    to: 'on'

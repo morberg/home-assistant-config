@@ -1,0 +1,16 @@
+name: Paus
+entities:
+  #  light.hall:
+  #   state: off
+  light.soffa:
+    state: on
+    brightness: 30
+    color_temp: 454.54545454545456
+  light.koksbord:
+    state: on
+    brightness: 63
+    color_temp: 454.54545454545456
+  light.matbord:
+    state: on
+    brightness: 50
+    color_temp: 454.54545454545456

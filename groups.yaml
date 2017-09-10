@@ -1,0 +1,23 @@
+Vardagsrum:
+  - light.soffa
+  - light.matbord
+
+Kök:
+  - light.koksbord
+
+Bottenvåning:
+  - light.soffa
+  - light.matbord
+  - light.koksbord
+
+Källare:
+  - light.matkallare
+
+Disas rum:
+  - light.disas_lampa
+
+Familj:
+  - device_tracker.matrix # Niklas
+  - device_tracker.quack  # Olle
+  - device_tracker.lindasiphone
+  - device_tracker.disasiphone
