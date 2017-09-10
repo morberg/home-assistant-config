@@ -6,3 +6,7 @@ entities:
     color_temp: 454.54545454545456
   light.matbord:
     state: off
+  light.koksbord:
+     state: on
+     brightness: 63
+     color_temp: 454.54545454545456
