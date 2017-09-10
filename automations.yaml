@@ -24,8 +24,13 @@
   alias: 'TV: Sony TV av (alltid)'
   condition: []
 - action:
-  - data:
-      entity_id: scene.skymning
+  - data_template:
+      entity_id: >
+        {% if is_state("media_player.sony_tv", "on") %}
+          scene.play
+        {% else %}
+          scene.skymning
+        {% endif %}
     service: scene.turn_on
   alias: "Solnedg\xE5ng: T\xE4nd lampor"
   condition: []
