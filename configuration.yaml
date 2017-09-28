@@ -42,9 +42,6 @@ discovery:
     - axis
     - plex_mediaserver
 
-# Allows you to issue voice commands from the frontend in enabled browsers
-conversation:
-
 # Enables support for tracking state changes over time
 history:
 
@@ -61,13 +58,10 @@ sensor:
       - precipitation
       - cloudiness
 
-# Text to speech
-tts:
-  - platform: google
-
 apple_tv:
   - host: 192.168.1.134
     login_id: !secret apple-tv-login-id
+#    credentials: !secret apple-tv-credentials
     start_off: true
     name: Apple TV
 

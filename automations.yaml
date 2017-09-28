@@ -25,12 +25,8 @@
   condition: []
 - action:
   - data_template:
-      entity_id: >
-        {% if is_state("media_player.sony_tv", "on") %}
-          scene.play
-        {% else %}
-          scene.skymning
-        {% endif %}
+      entity_id: "{% if is_state(\"media_player.sony_tv\", \"on\") %}\n  scene.play\n\
+        {% else %}\n  scene.skymning\n{% endif %}\n"
     service: scene.turn_on
   alias: "Solnedg\xE5ng: T\xE4nd lampor"
   condition: []
@@ -40,7 +36,7 @@
     platform: sun
 - action:
   - data:
-      entity_id: group.botten
+      entity_id: group.bottenvaning
     service: light.turn_off
   alias: "Tid: 1:00 -> Sl\xE4ck alla lampor p\xE5 bottenv\xE5ning"
   condition: []
