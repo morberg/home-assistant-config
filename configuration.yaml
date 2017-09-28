@@ -77,6 +77,7 @@ device_tracker:
     verify_ssl: False
     track_new_devices: false
 
+switch: !include switch.yaml
 group: !include groups.yaml
 automation: !include automations.yaml
 scene: !include_dir_list scenes
