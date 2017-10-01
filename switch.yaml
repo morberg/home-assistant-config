@@ -1,6 +1,7 @@
 - platform: flux
   lights:
     - light.soffa
+    - light.matbord
   name: Flux
   start_time: '12:00'
   stop_time: '20:30'
