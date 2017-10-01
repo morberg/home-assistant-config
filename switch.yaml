@@ -2,6 +2,7 @@
   lights:
     - light.soffa
     - light.matbord
+    - light.koksbord
   name: Flux
   start_time: '12:00'
   stop_time: '20:30'
