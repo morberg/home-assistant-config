@@ -3,12 +3,10 @@ entities:
   switch.flux:
     state: off
   light.hall:
-     state: off
-  light.soffa:
     state: on
-    brightness: 20
-    color_temp: 454.54545454545456
-  light.koksbord:
+    brightness: 50
+    color_temp: 457.66590389016017
+ light.koksbord:
     state: on
     brightness: 63
     color_temp: 454.54545454545456
@@ -16,3 +14,15 @@ entities:
     state: on
     brightness: 20
     color_temp: 454.54545454545456
+  light.hyllor:
+    state: on
+    brightness: 1
+    color_temp: 457.66590389016017
+  light.klocka:
+    state: on
+    brightness: 1
+    color_temp: 458.50527281063734
+  light.soffa:
+    state: on
+    brightness: 20
+    color_temp: 205.5076037813399
