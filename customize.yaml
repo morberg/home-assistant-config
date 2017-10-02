@@ -2,11 +2,17 @@ light.matkallare:
   homebridge_visible: true
 light.koksbord:
   homebridge_visible: true
+group.kok:
+  homebridge_visible: true
 light.soffa:
   homebridge_visible: true
 light.matbord:
   homebridge_visible: true
+light.hall:
+  homebridge_visible: true
 light.disas_lampa:
+  homebridge_visible: true
+light.olles_lampa:
   homebridge_visible: true
 scene.mysljus:
   homebridge_visible: true
