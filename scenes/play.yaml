@@ -2,3 +2,5 @@ name: Play
 entities:
   light.matbord:
     state: off
+  light.hall:
+    state: off
