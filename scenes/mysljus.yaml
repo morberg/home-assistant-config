@@ -1,6 +1,6 @@
 name: Mysljus
 entities:
-  switch.fluxer:
+  switch.flux:
     state: off
   light.hall:
      state: off
