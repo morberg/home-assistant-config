@@ -1,7 +1,9 @@
 name: Mysljus
 entities:
-  #  light.hall:
-  #   state: off
+  switch.fluxer:
+    state: off
+  light.hall:
+     state: off
   light.soffa:
     state: on
     brightness: 20
