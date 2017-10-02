@@ -9,3 +9,6 @@ entities:
   light.koksbord:
     state: on
     brightness: 114
+  light.hall:
+    state: on
+    brightness: 50
