@@ -1,20 +1,29 @@
 Vardagsrum:
   - light.soffa
   - light.matbord
+  - light.hall
 
 Kök:
+  - light.skarbrada
+  - light.hyllor
+  - light.klocka
   - light.koksbord
 
 Bottenvåning:
-  - light.soffa
-  - light.matbord
-  - light.koksbord
+  #  - light.soffa
+  #- light.matbord
+  #- light.koksbord
+  - group.vardagsrum
+  - group.kok
 
 Källare:
   - light.matkallare
 
 Disas rum:
   - light.disas_lampa
+
+Olles rum:
+  - light.olles_lampa
 
 Familj:
   - device_tracker.matrix # Niklas
