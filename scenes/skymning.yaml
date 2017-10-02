@@ -6,9 +6,9 @@ entities:
   light.soffa:
     state: on
     brightness: 50
-  light.koksbord:
-    state: on
-    brightness: 114
   light.hall:
     state: on
     brightness: 50
+  group.kok:
+    state: on
+    brightness: 100

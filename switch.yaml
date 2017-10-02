@@ -3,6 +3,10 @@
     - light.soffa
     - light.matbord
     - light.koksbord
+    - light.skarbrada
+    - light.hyllor
+    - light.klocka
+    - light.hall
   name: Flux
   start_time: '12:00'
   stop_time: '20:30'
