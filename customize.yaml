@@ -2,7 +2,13 @@ light.matkallare:
   homebridge_visible: true
 light.koksbord:
   homebridge_visible: true
-group.kok:
+light.skarbrada:
+  homebride_visible: true
+light.hyllor:
+  homebride_visible: true
+light.klocka:
+  homebride_visible: true
+group.bottenvaning:
   homebridge_visible: true
 light.soffa:
   homebridge_visible: true
