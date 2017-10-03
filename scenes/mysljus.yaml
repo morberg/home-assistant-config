@@ -25,4 +25,5 @@ entities:
   light.soffa:
     state: on
     brightness: 20
-    color_temp: 205.5076037813399
+    rgb_color: [228, 145, 175]
+    #color_temp: 205.5076037813399
