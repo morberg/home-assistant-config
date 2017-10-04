@@ -1,3 +1,4 @@
+name: Morgon
 entities:
   light.skarbrada:
     state: on
