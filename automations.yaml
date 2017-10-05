@@ -157,11 +157,18 @@
   - data:
       entity_id: scene.morgon
     service: scene.turn_on
-  alias: "Tid: S\xE4tt p\xE5 morgonljus 6:45 om solen inte \xE4r uppe"
+  alias: "Tid: 6:40 morgonljus om solen inte \xE4r uppe"
   condition:
-  - before: sunrise
-    condition: sun
+  - condition: sun
+    before: sunrise
+  - condition: time
+    weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
   id: '1507131975393'
   trigger:
-  - at: '6:45'
+  - at: '6:40'
     platform: time
