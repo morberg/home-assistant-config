@@ -1,7 +1,7 @@
-alias: "12:00 -> Slå på Flux"
+alias: "Slå på flux klockan 12:00"
 trigger:
   platform: time
-  at: 12:00:00
+  at: '12:00:00'
 action:
-  service: switch.turn_on
+  service: homeassistant.turn_on
   entity_id: switch.flux
