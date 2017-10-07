@@ -41,6 +41,7 @@ discovery:
   ignore:
     - axis
     - plex_mediaserver
+    - apple_tv
 
 # Enables support for tracking state changes over time
 history:
@@ -58,12 +59,12 @@ sensor:
       - precipitation
       - cloudiness
 
-apple_tv:
-  - host: 192.168.1.134
-    login_id: !secret apple-tv-login-id
+#apple_tv:
+#  - host: 192.168.1.134
+#    login_id: !secret apple-tv-login-id
 #    credentials: !secret apple-tv-credentials
-    start_off: true
-    name: Apple TV
+#    start_off: true
+#    name: Apple TV
 
 media_player:
   - platform: braviatv
@@ -79,5 +80,6 @@ device_tracker:
 
 switch: !include switch.yaml
 group: !include groups.yaml
-automation: !include automations.yaml
+#automation: !include automations.yaml
+automation: !include_dir_list automations
 scene: !include_dir_list scenes
