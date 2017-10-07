@@ -1,0 +1,20 @@
+alias: "Tid: 6:40 morgonljus på vardagar (om solen inte är uppe)"
+trigger:
+  platform: time
+  at: '6:40'
+condition:
+  condition: and
+  conditions:
+    - condition: sun
+      before: sunrise
+    - condition: time
+      weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+action:
+  data:
+    entity_id: scene.morgon
+  service: scene.turn_on

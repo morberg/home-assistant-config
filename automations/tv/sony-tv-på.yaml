@@ -1,0 +1,11 @@
+# Slå på Apple TV i hass när Sony TV slås på
+alias: "TV: Sony TV på (alltid)"
+trigger:
+  platform: state
+  entity_id: media_player.sony_tv
+  from: 'off'
+  to: 'on'
+action:
+  data:
+    entity_id: remote.apple_tv
+  service: remote.turn_on

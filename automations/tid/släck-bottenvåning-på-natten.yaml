@@ -1,0 +1,8 @@
+alias: "Tid: 1:00 -> Släck alla lampor på bottenvåning"
+trigger:
+  platform: time
+  at: 01:00:00
+action:
+  service: light.turn_off
+  data:
+    entity_id: group.bottenvaning

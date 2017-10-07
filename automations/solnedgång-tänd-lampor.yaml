@@ -1,0 +1,9 @@
+alias: "Solnedgång: Tänd lampor"
+trigger:
+  platform: sun
+  event: sunset
+action:
+  service: scene.turn_on
+  data_template:
+    entity_id: "{% if is_state(\"media_player.sony_tv\", \"on\") %}\n  scene.play\n\
+    {% else %}\n  scene.skymning\n{% endif %}\n"

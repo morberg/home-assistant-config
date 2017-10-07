@@ -1,0 +1,11 @@
+# Stäng av Apple TV i Hass när Sony TV stängs av
+alias: 'TV: Sony TV av (alltid)'
+trigger:
+  platform: state
+  entity_id: media_player.sony_tv
+  from: 'on'
+  to: 'off'
+action:
+  data:
+    entity_id: remote.apple_tv
+  service: remote.turn_off

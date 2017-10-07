@@ -1,0 +1,10 @@
+alias: "Närvaro: Sista familjemedlemmen går hemifrån -> Släck alla lampor"
+trigger:
+  platform: state
+  entity_id: group.familj
+  from: home
+  to: not_home
+action:
+  data:
+    entity_id: group.all_lights
+  service: light.turn_off
