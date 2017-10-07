@@ -15,6 +15,5 @@ condition:
       - thu
       - fri
 action:
-  data:
-    entity_id: scene.morgon
   service: scene.turn_on
+  entity_id: scene.morgon

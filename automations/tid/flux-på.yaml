@@ -1,0 +1,7 @@
+alias: "12:00 -> Slå på Flux"
+trigger:
+  platform: time
+  at: 12:00:00
+action:
+  service: switch.turn_on
+  entity_id: switch.flux
