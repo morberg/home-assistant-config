@@ -1,4 +1,4 @@
-alias: "Slå på flux klockan 12:00"
+alias: "Tid: 12:00->Slå på flux"
 trigger:
   platform: time
   at: '12:00:00'
