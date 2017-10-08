@@ -9,4 +9,4 @@ condition:
   after: sunset
 action:
   service: scene.turn_on
-  entity_id: scene.pause
+  entity_id: scene.paus
