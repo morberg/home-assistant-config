@@ -1,5 +1,7 @@
 name: Skymning
 entities:
+  switch.flux:
+    state: on
   light.matbord:
     state: on
     brightness: 42
