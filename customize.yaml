@@ -26,3 +26,4 @@ scene.skymning:
   homebridge_visible: true
 remote.apple_tv:
   hidden: true
+  
