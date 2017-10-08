@@ -59,12 +59,12 @@ sensor:
       - precipitation
       - cloudiness
 
-#apple_tv:
-#  - host: 192.168.1.134
-#    login_id: !secret apple-tv-login-id
-#    credentials: !secret apple-tv-credentials
-#    start_off: true
-#    name: Apple TV
+apple_tv:
+ - host: 192.168.1.134
+   login_id: !secret apple-tv-login-id
+#   credentials: !secret apple-tv-credentials
+   start_off: true
+   name: Apple TV
 
 media_player:
   - platform: braviatv

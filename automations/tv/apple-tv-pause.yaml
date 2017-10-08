@@ -1,0 +1,12 @@
+alias: "TV: Apple TV pause (efter solnedgång)"
+trigger:
+  platform: state
+  entity_id: media_player.apple_tv
+  from: playing
+  to: paused
+condition:
+  condition: sun
+  after: sunset
+action:
+  service: scene.turn_on
+  entity_id: scene.pause
