@@ -4,6 +4,9 @@ trigger:
   entity_id: group.familj
   from: home
   to: not_home
+condition:
+  platform: time
+  before: '11:00:00'
 action:
   data:
     entity_id: group.all_lights
