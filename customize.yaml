@@ -3,11 +3,11 @@ light.matkallare:
 light.koksbord:
   homebridge_visible: true
 light.skarbrada:
-  homebride_visible: true
+  homebridge_visible: true
 light.hyllor:
-  homebride_visible: true
+  homebridge_visible: true
 light.klocka:
-  homebride_visible: true
+  homebridge_visible: true
 group.bottenvaning:
   homebridge_visible: true
 light.soffa:
@@ -26,4 +26,7 @@ scene.skymning:
   homebridge_visible: true
 remote.apple_tv:
   hidden: true
-  
+group.all_automations:
+  hidden: false  
+group.all_lights:
+  hidden: false

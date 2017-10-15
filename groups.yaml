@@ -16,14 +16,39 @@ Bottenvåning:
 Källare:
   - light.matkallare
 
-Disas rum:
+Barnens rum:
   - light.disas_lampa
-
-Olles rum:
   - light.olles_lampa
 
+Hem:
+  view: yes
+  icon: mdi:home
+  entities:
+    - group.bottenvaning
+    - group.vardagsrum
+    - group.kok
+    - group.barnens_rum
+    - group.scenes
+
 Familj:
-  - device_tracker.matrix # Niklas
-  - device_tracker.quack  # Olle
-  - device_tracker.lindasiphone
-  - device_tracker.disasiphone
+  view: yes
+  entities:
+    - device_tracker.matrix # Niklas
+    - device_tracker.quack  # Olle
+    - device_tracker.lindasiphone
+    - device_tracker.disasiphone
+
+System:
+  view: yes
+  entities:
+    - group.all_automations
+
+Scenes:
+  view: no
+  entities:
+    - scene.skymning
+    - scene.morgon
+    - scene.mysljus
+    - scene.play
+    - scene.paus
+

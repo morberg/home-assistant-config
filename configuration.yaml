@@ -78,6 +78,8 @@ device_tracker:
     verify_ssl: False
     track_new_devices: false
 
+ios:
+
 switch: !include switch.yaml
 group: !include groups.yaml
 automation: !include_dir_list automations
