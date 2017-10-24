@@ -5,16 +5,15 @@ entities:
   light.matbord:
     state: on
     brightness: 42
-    transition: 600 # 1 minut
   light.soffa:
     state: on
     brightness: 50
-    transition: 600
   light.hall:
     state: on
     brightness: 50
-    transition: 600
   group.kok:
     state: on
     brightness: 100
-    transition: 600
+  light.koksbord:
+    state: on
+    brightness_pct: 20
