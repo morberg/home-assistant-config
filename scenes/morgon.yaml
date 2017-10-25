@@ -18,7 +18,7 @@ entities:
     color_temp: 413
   light.koksbord:
     state: on
-    brightness: 144
+    brightness_pct: 20
     color_temp: 382
   light.matbord:
     state: on
