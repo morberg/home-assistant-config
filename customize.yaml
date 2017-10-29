@@ -8,6 +8,8 @@ light.hyllor:
   homebridge_visible: true
 light.klocka:
   homebridge_visible: true
+group.kok:
+  homebridge_visible: true
 group.bottenvaning:
   homebridge_visible: true
 light.soffa:
@@ -16,6 +18,8 @@ light.matbord:
   homebridge_visible: true
 light.hall:
   homebridge_visible: true
+group.hallen:
+  homebridge_visible: true
 light.disas_lampa:
   homebridge_visible: true
 light.olles_lampa:
@@ -23,6 +27,8 @@ light.olles_lampa:
 scene.mysljus:
   homebridge_visible: true
 scene.skymning:
+  homebridge_visible: true
+scene.morgon:
   homebridge_visible: true
 remote.apple_tv:
   hidden: true

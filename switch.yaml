@@ -7,8 +7,8 @@
     - light.klocka
     - light.hall
   name: Flux
-  start_time: '12:00'
-  stop_time: '20:30'
+  start_time: '9:00'
+  stop_time: '21:30'
   start_colortemp: 3500
   sunset_colortemp: 2500
   stop_colortemp: 1900
