@@ -1,0 +1,1205 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 20;
+  background-image: url("/css/zen/img/zen_bg.jpg"); 
+  background-repeat: repeat;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1;
+  font-family: 'Orbitron', 'Helvetica Neue', 'Helvetica', 'Open Sans', 'Arial'
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+img, object {
+  max-width: 100%;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  }
+
+iframe {
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+td {
+  vertical-align: middle;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, p {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  margin-bottom: 6px;
+  text-align: center;
+  font-size: 100%;
+  font-weight: 300;
+  color: #000;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+h2 {
+  font-size: 300%;
+  font-weight: 500;
+  color: #000;
+}
+h3 {
+  font-size: 125%;
+  font-weight: 300;
+  color: #000;
+}
+
+
+/*Base widget styles*/
+ 
+
+.dashboard_main {
+  margin: 0px auto;
+  
+}
+
+.gridster {
+  margin: 0px auto;
+  
+}
+
+.icon-background {
+  pointer-events: none;
+  width: 100%!important;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.1;
+  font-size: 1375%;
+  text-align: center;
+  margin-top: 82px;
+}
+
+.list-nostyle {
+  list-style: none;
+}
+
+.gridster ul {
+  list-style: none;
+}
+
+.gs-w {
+  width: 100%;
+  display: table;
+  cursor: pointer;
+  z-index: auto !important;
+}
+.gs-w:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: inherit; 
+}
+
+.iframe {
+  position: relative;
+  overflow: hidden; 
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.widget {
+  padding: 0px 0px;
+  text-align: center;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid #000;
+  border-right: 3px solid #000;
+  border-bottom: 3px solid #000;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+ }
+  .title {
+    color: rgba(0, 0, 0, 0);
+  }
+
+  .icon-inactive {
+    color: #888;
+  }
+
+  .icon-active {
+    color: #ff0000;
+  }
+}
+
+#container {
+  padding-top: 10px;
+
+}
+
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 9999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialogOpen {
+	opacity:0.95;
+	pointer-events: auto;
+}
+
+.modalDialogClose {
+	opacity:0;
+	pointer-events: none;
+}
+
+.modalDialog > div {
+	width: 275px;
+	position: relative;
+	margin: 3% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+}
+
+.modalDialogCloseButton {
+	line-height: 50px;
+	position: absolute;
+	right: -25px;
+	text-align: center;
+	top: -20px;
+	width: 50px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+
+.modalDialogCloseButton:hover { background: #ce9863 }
+.widget-baseclock-default-clock-clock.date {
+	position: absolute;
+	top: 5px;
+	width: 100%;
+}
+.widget-baseclock-default-clock-clock.time {
+ 	position: absolute;
+	top: 45px;
+	width: 100%;
+}
+.widget-baseswitch-default-device-tracker-lindasiphone {
+	position: relative;
+}
+
+.widget-baseswitch-default-device-tracker-lindasiphone .title {
+	position: absolute;
+	top: 5px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-device-tracker-lindasiphone .title2 {
+	position: absolute;
+	top: 23px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-device-tracker-lindasiphone .state_text {
+	position: absolute;
+	bottom: -3px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-device-tracker-lindasiphone .icon {
+	position: absolute;
+	top: 43px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-device-tracker-lindasiphone .toggle-area {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.widget-baseswitch-default-device-tracker-matrix {
+	position: relative;
+}
+
+.widget-baseswitch-default-device-tracker-matrix .title {
+	position: absolute;
+	top: 5px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-device-tracker-matrix .title2 {
+	position: absolute;
+	top: 23px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-device-tracker-matrix .state_text {
+	position: absolute;
+	bottom: -3px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-device-tracker-matrix .icon {
+	position: absolute;
+	top: 43px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-device-tracker-matrix .toggle-area {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.widget-baseswitch-default-device-tracker-disasiphone {
+	position: relative;
+}
+
+.widget-baseswitch-default-device-tracker-disasiphone .title {
+	position: absolute;
+	top: 5px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-device-tracker-disasiphone .title2 {
+	position: absolute;
+	top: 23px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-device-tracker-disasiphone .state_text {
+	position: absolute;
+	bottom: -3px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-device-tracker-disasiphone .icon {
+	position: absolute;
+	top: 43px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-device-tracker-disasiphone .toggle-area {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.widget-baseswitch-default-device-tracker-quack {
+	position: relative;
+}
+
+.widget-baseswitch-default-device-tracker-quack .title {
+	position: absolute;
+	top: 5px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-device-tracker-quack .title2 {
+	position: absolute;
+	top: 23px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-device-tracker-quack .state_text {
+	position: absolute;
+	bottom: -3px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-device-tracker-quack .icon {
+	position: absolute;
+	top: 43px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-device-tracker-quack .toggle-area {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.widget-baselight-default-group-vardagsrum {
+	position: relative;
+}
+
+.widget-baselight-default-group-vardagsrum .state_text {
+	font-size: 85%;
+}
+
+.widget-baselight-default-group-vardagsrum .title {
+	position: absolute;
+	top: 5px;
+	width: 100%;
+}
+
+.widget-baselight-default-group-vardagsrum .title2 {
+	position: absolute;
+	top: 23px;
+	width: 100%;
+}
+
+.widget-baselight-default-group-vardagsrum .state_text {
+	position: absolute;
+	top: 38px;
+	width: 100%;
+}
+
+.widget-baselight-default-group-vardagsrum .icon {
+	position: absolute;
+	top: 43px;
+	width: 100%;
+}
+
+.widget-baselight-default-group-vardagsrum .toggle-area {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 75%;
+}
+
+.widget-baselight-default-group-vardagsrum .level {
+	display: inline-block;
+}
+
+.widget-baselight-default-group-vardagsrum .unit {
+	display: inline-block;
+}
+
+.widget-baselight-default-group-vardagsrum .levelunit {
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+}
+
+.widget-baselight-default-group-vardagsrum .secondary-icon {
+	position: absolute;
+	bottom: 0px;
+	font-size: 20px;
+	width: 32px;
+	color: white;
+}
+
+.widget-baselight-default-group-vardagsrum .secondary-icon.plus {
+	right: 24px;
+}
+
+.widget-baselight-default-group-vardagsrum .secondary-icon.plus i {
+	padding-top: 10px;
+	padding-left: 30px;
+}
+
+.widget-baselight-default-group-vardagsrum .secondary-icon.minus {
+	left: 8px;
+}
+
+.widget-baselight-default-group-vardagsrum .secondary-icon.minus i {
+	padding-top: 10px;
+	padding-right: 30px;
+}
+.widget-baselight-default-light-hall {
+	position: relative;
+}
+
+.widget-baselight-default-light-hall .state_text {
+	font-size: 85%;
+}
+
+.widget-baselight-default-light-hall .title {
+	position: absolute;
+	top: 5px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-hall .title2 {
+	position: absolute;
+	top: 23px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-hall .state_text {
+	position: absolute;
+	top: 38px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-hall .icon {
+	position: absolute;
+	top: 43px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-hall .toggle-area {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 75%;
+}
+
+.widget-baselight-default-light-hall .level {
+	display: inline-block;
+}
+
+.widget-baselight-default-light-hall .unit {
+	display: inline-block;
+}
+
+.widget-baselight-default-light-hall .levelunit {
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-hall .secondary-icon {
+	position: absolute;
+	bottom: 0px;
+	font-size: 20px;
+	width: 32px;
+	color: white;
+}
+
+.widget-baselight-default-light-hall .secondary-icon.plus {
+	right: 24px;
+}
+
+.widget-baselight-default-light-hall .secondary-icon.plus i {
+	padding-top: 10px;
+	padding-left: 30px;
+}
+
+.widget-baselight-default-light-hall .secondary-icon.minus {
+	left: 8px;
+}
+
+.widget-baselight-default-light-hall .secondary-icon.minus i {
+	padding-top: 10px;
+	padding-right: 30px;
+}
+.widget-baselight-default-light-soffa {
+	position: relative;
+}
+
+.widget-baselight-default-light-soffa .state_text {
+	font-size: 85%;
+}
+
+.widget-baselight-default-light-soffa .title {
+	position: absolute;
+	top: 5px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-soffa .title2 {
+	position: absolute;
+	top: 23px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-soffa .state_text {
+	position: absolute;
+	top: 38px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-soffa .icon {
+	position: absolute;
+	top: 43px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-soffa .toggle-area {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 75%;
+}
+
+.widget-baselight-default-light-soffa .level {
+	display: inline-block;
+}
+
+.widget-baselight-default-light-soffa .unit {
+	display: inline-block;
+}
+
+.widget-baselight-default-light-soffa .levelunit {
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-soffa .secondary-icon {
+	position: absolute;
+	bottom: 0px;
+	font-size: 20px;
+	width: 32px;
+	color: white;
+}
+
+.widget-baselight-default-light-soffa .secondary-icon.plus {
+	right: 24px;
+}
+
+.widget-baselight-default-light-soffa .secondary-icon.plus i {
+	padding-top: 10px;
+	padding-left: 30px;
+}
+
+.widget-baselight-default-light-soffa .secondary-icon.minus {
+	left: 8px;
+}
+
+.widget-baselight-default-light-soffa .secondary-icon.minus i {
+	padding-top: 10px;
+	padding-right: 30px;
+}
+.widget-baselight-default-light-matbord {
+	position: relative;
+}
+
+.widget-baselight-default-light-matbord .state_text {
+	font-size: 85%;
+}
+
+.widget-baselight-default-light-matbord .title {
+	position: absolute;
+	top: 5px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-matbord .title2 {
+	position: absolute;
+	top: 23px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-matbord .state_text {
+	position: absolute;
+	top: 38px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-matbord .icon {
+	position: absolute;
+	top: 43px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-matbord .toggle-area {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 75%;
+}
+
+.widget-baselight-default-light-matbord .level {
+	display: inline-block;
+}
+
+.widget-baselight-default-light-matbord .unit {
+	display: inline-block;
+}
+
+.widget-baselight-default-light-matbord .levelunit {
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-matbord .secondary-icon {
+	position: absolute;
+	bottom: 0px;
+	font-size: 20px;
+	width: 32px;
+	color: white;
+}
+
+.widget-baselight-default-light-matbord .secondary-icon.plus {
+	right: 24px;
+}
+
+.widget-baselight-default-light-matbord .secondary-icon.plus i {
+	padding-top: 10px;
+	padding-left: 30px;
+}
+
+.widget-baselight-default-light-matbord .secondary-icon.minus {
+	left: 8px;
+}
+
+.widget-baselight-default-light-matbord .secondary-icon.minus i {
+	padding-top: 10px;
+	padding-right: 30px;
+}
+.widget-baselight-default-group-kok {
+	position: relative;
+}
+
+.widget-baselight-default-group-kok .state_text {
+	font-size: 85%;
+}
+
+.widget-baselight-default-group-kok .title {
+	position: absolute;
+	top: 5px;
+	width: 100%;
+}
+
+.widget-baselight-default-group-kok .title2 {
+	position: absolute;
+	top: 23px;
+	width: 100%;
+}
+
+.widget-baselight-default-group-kok .state_text {
+	position: absolute;
+	top: 38px;
+	width: 100%;
+}
+
+.widget-baselight-default-group-kok .icon {
+	position: absolute;
+	top: 43px;
+	width: 100%;
+}
+
+.widget-baselight-default-group-kok .toggle-area {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 75%;
+}
+
+.widget-baselight-default-group-kok .level {
+	display: inline-block;
+}
+
+.widget-baselight-default-group-kok .unit {
+	display: inline-block;
+}
+
+.widget-baselight-default-group-kok .levelunit {
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+}
+
+.widget-baselight-default-group-kok .secondary-icon {
+	position: absolute;
+	bottom: 0px;
+	font-size: 20px;
+	width: 32px;
+	color: white;
+}
+
+.widget-baselight-default-group-kok .secondary-icon.plus {
+	right: 24px;
+}
+
+.widget-baselight-default-group-kok .secondary-icon.plus i {
+	padding-top: 10px;
+	padding-left: 30px;
+}
+
+.widget-baselight-default-group-kok .secondary-icon.minus {
+	left: 8px;
+}
+
+.widget-baselight-default-group-kok .secondary-icon.minus i {
+	padding-top: 10px;
+	padding-right: 30px;
+}
+.widget-baselight-default-light-skarbrada {
+	position: relative;
+}
+
+.widget-baselight-default-light-skarbrada .state_text {
+	font-size: 85%;
+}
+
+.widget-baselight-default-light-skarbrada .title {
+	position: absolute;
+	top: 5px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-skarbrada .title2 {
+	position: absolute;
+	top: 23px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-skarbrada .state_text {
+	position: absolute;
+	top: 38px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-skarbrada .icon {
+	position: absolute;
+	top: 43px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-skarbrada .toggle-area {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 75%;
+}
+
+.widget-baselight-default-light-skarbrada .level {
+	display: inline-block;
+}
+
+.widget-baselight-default-light-skarbrada .unit {
+	display: inline-block;
+}
+
+.widget-baselight-default-light-skarbrada .levelunit {
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-skarbrada .secondary-icon {
+	position: absolute;
+	bottom: 0px;
+	font-size: 20px;
+	width: 32px;
+	color: white;
+}
+
+.widget-baselight-default-light-skarbrada .secondary-icon.plus {
+	right: 24px;
+}
+
+.widget-baselight-default-light-skarbrada .secondary-icon.plus i {
+	padding-top: 10px;
+	padding-left: 30px;
+}
+
+.widget-baselight-default-light-skarbrada .secondary-icon.minus {
+	left: 8px;
+}
+
+.widget-baselight-default-light-skarbrada .secondary-icon.minus i {
+	padding-top: 10px;
+	padding-right: 30px;
+}
+.widget-baselight-default-light-klocka {
+	position: relative;
+}
+
+.widget-baselight-default-light-klocka .state_text {
+	font-size: 85%;
+}
+
+.widget-baselight-default-light-klocka .title {
+	position: absolute;
+	top: 5px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-klocka .title2 {
+	position: absolute;
+	top: 23px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-klocka .state_text {
+	position: absolute;
+	top: 38px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-klocka .icon {
+	position: absolute;
+	top: 43px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-klocka .toggle-area {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 75%;
+}
+
+.widget-baselight-default-light-klocka .level {
+	display: inline-block;
+}
+
+.widget-baselight-default-light-klocka .unit {
+	display: inline-block;
+}
+
+.widget-baselight-default-light-klocka .levelunit {
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-klocka .secondary-icon {
+	position: absolute;
+	bottom: 0px;
+	font-size: 20px;
+	width: 32px;
+	color: white;
+}
+
+.widget-baselight-default-light-klocka .secondary-icon.plus {
+	right: 24px;
+}
+
+.widget-baselight-default-light-klocka .secondary-icon.plus i {
+	padding-top: 10px;
+	padding-left: 30px;
+}
+
+.widget-baselight-default-light-klocka .secondary-icon.minus {
+	left: 8px;
+}
+
+.widget-baselight-default-light-klocka .secondary-icon.minus i {
+	padding-top: 10px;
+	padding-right: 30px;
+}
+.widget-baselight-default-light-hyllor {
+	position: relative;
+}
+
+.widget-baselight-default-light-hyllor .state_text {
+	font-size: 85%;
+}
+
+.widget-baselight-default-light-hyllor .title {
+	position: absolute;
+	top: 5px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-hyllor .title2 {
+	position: absolute;
+	top: 23px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-hyllor .state_text {
+	position: absolute;
+	top: 38px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-hyllor .icon {
+	position: absolute;
+	top: 43px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-hyllor .toggle-area {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 75%;
+}
+
+.widget-baselight-default-light-hyllor .level {
+	display: inline-block;
+}
+
+.widget-baselight-default-light-hyllor .unit {
+	display: inline-block;
+}
+
+.widget-baselight-default-light-hyllor .levelunit {
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-hyllor .secondary-icon {
+	position: absolute;
+	bottom: 0px;
+	font-size: 20px;
+	width: 32px;
+	color: white;
+}
+
+.widget-baselight-default-light-hyllor .secondary-icon.plus {
+	right: 24px;
+}
+
+.widget-baselight-default-light-hyllor .secondary-icon.plus i {
+	padding-top: 10px;
+	padding-left: 30px;
+}
+
+.widget-baselight-default-light-hyllor .secondary-icon.minus {
+	left: 8px;
+}
+
+.widget-baselight-default-light-hyllor .secondary-icon.minus i {
+	padding-top: 10px;
+	padding-right: 30px;
+}
+.widget-baselight-default-light-koksbord {
+	position: relative;
+}
+
+.widget-baselight-default-light-koksbord .state_text {
+	font-size: 85%;
+}
+
+.widget-baselight-default-light-koksbord .title {
+	position: absolute;
+	top: 5px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-koksbord .title2 {
+	position: absolute;
+	top: 23px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-koksbord .state_text {
+	position: absolute;
+	top: 38px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-koksbord .icon {
+	position: absolute;
+	top: 43px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-koksbord .toggle-area {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 75%;
+}
+
+.widget-baselight-default-light-koksbord .level {
+	display: inline-block;
+}
+
+.widget-baselight-default-light-koksbord .unit {
+	display: inline-block;
+}
+
+.widget-baselight-default-light-koksbord .levelunit {
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+}
+
+.widget-baselight-default-light-koksbord .secondary-icon {
+	position: absolute;
+	bottom: 0px;
+	font-size: 20px;
+	width: 32px;
+	color: white;
+}
+
+.widget-baselight-default-light-koksbord .secondary-icon.plus {
+	right: 24px;
+}
+
+.widget-baselight-default-light-koksbord .secondary-icon.plus i {
+	padding-top: 10px;
+	padding-left: 30px;
+}
+
+.widget-baselight-default-light-koksbord .secondary-icon.minus {
+	left: 8px;
+}
+
+.widget-baselight-default-light-koksbord .secondary-icon.minus i {
+	padding-top: 10px;
+	padding-right: 30px;
+}
+.widget-baseswitch-default-scene-skymning {
+	position: relative;
+}
+
+.widget-baseswitch-default-scene-skymning .title {
+	position: absolute;
+	top: 5px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-scene-skymning .title2 {
+	position: absolute;
+	top: 23px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-scene-skymning .state_text {
+	position: absolute;
+	bottom: -3px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-scene-skymning .icon {
+	position: absolute;
+	top: 43px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-scene-skymning .toggle-area {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.widget-baseswitch-default-scene-mysljus {
+	position: relative;
+}
+
+.widget-baseswitch-default-scene-mysljus .title {
+	position: absolute;
+	top: 5px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-scene-mysljus .title2 {
+	position: absolute;
+	top: 23px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-scene-mysljus .state_text {
+	position: absolute;
+	bottom: -3px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-scene-mysljus .icon {
+	position: absolute;
+	top: 43px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-scene-mysljus .toggle-area {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.widget-baseswitch-default-switch-flux {
+	position: relative;
+}
+
+.widget-baseswitch-default-switch-flux .title {
+	position: absolute;
+	top: 5px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-switch-flux .title2 {
+	position: absolute;
+	top: 23px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-switch-flux .state_text {
+	position: absolute;
+	bottom: -3px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-switch-flux .icon {
+	position: absolute;
+	top: 43px;
+	width: 100%;
+}
+
+.widget-baseswitch-default-switch-flux .toggle-area {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+

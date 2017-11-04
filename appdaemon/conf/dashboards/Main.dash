@@ -1,0 +1,19 @@
+##
+## Main arguments, all optional
+##
+title: Main Panel
+widget_dimensions: [150, 150]
+widget_size: [1, 1]
+widget_margins: [5, 5]
+columns: 8
+global_parameters:
+    use_comma: 0
+    precision: 1
+    use_hass_icon: 1
+    time_format: 24hr
+
+layout:
+  - clock.clock (2x1), device_tracker.lindasiphone, device_tracker.matrix, device_tracker.disasiphone, device_tracker.quack
+  - group.vardagsrum, light.hall, light.soffa, light.matbord, light.disas_lampa, light.olles_lampa
+  - group.kok, light.skarbrada, light.klocka, light.hyllor, light.koksbord
+  - scene.morgon, scene.skymning, scene.mysljus, switch.flux
