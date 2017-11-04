@@ -2,3 +2,4 @@ name: Paus
 entities:
   light.matbord:
     state: on
+    brightness_pct: 50
