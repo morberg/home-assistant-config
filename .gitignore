@@ -3,6 +3,8 @@
 !scenes
 !automations/
 !automations/*
+!appdaemon/
+!appdaemon/**
 !.gitignore
 secrets.yaml
 known_devices.yaml
