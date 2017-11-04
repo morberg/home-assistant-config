@@ -11,6 +11,10 @@ entities:
     state: on
     brightness_pct: 40
     transition: 600
+  light.hall:
+    state: on
+    brightness_pct: 25
+    transition: 600
   group.koksspot:
     state: on
     brightness_pct: 40
