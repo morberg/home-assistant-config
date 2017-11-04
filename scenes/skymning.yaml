@@ -2,18 +2,20 @@ name: Skymning
 entities:
   switch.flux:
     state: on
-  light.matbord:
-    state: on
-    brightness: 42
   light.soffa:
     state: on
-    brightness: 50
-  light.hall:
+    brightness_pct: 70
+    rgb_color: [255, 198, 102]
+    transition: 600  # 600 seconds=10 minutes
+  light.matbord:
     state: on
-    brightness: 50
-  group.kok:
+    brightness_pct: 40
+    transition: 600
+  group.koksspot:
     state: on
-    brightness: 100
+    brightness_pct: 40
+    transition: 600
   light.koksbord:
     state: on
-    brightness_pct: 20
+    brightness_pct: 50
+    transition: 600
