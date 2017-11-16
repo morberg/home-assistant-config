@@ -21,7 +21,7 @@ class PresenceLight(appapi.AppDaemon):
     def presence_change(self, tracker, attribute, old, new, kwargs):
         self.log('Tracker: {}, attribute: {}, old: {}, new: {}'.format(tracker, attribute, old, new))
         if old != new:
-            self.log('State change: {} -> {}'.format(old, new))
+#            self.log('State change: {} -> {}'.format(old, new))
             if new == 'home':
                 self.someone_has_arrived(tracker)
     
@@ -60,10 +60,10 @@ class PresenceLight(appapi.AppDaemon):
         time.sleep(0.1)
         self.rgb = self.get_state(self.light, 'rgb_color')
         self.brightness = self.get_state(self.light, 'brightness')
-        self.log('Original values: {}, RGB: {}, brightness: {}'.format(self.state, self.rgb, self.brightness))
+        self.log('Original values: {}, RGB: {}, brightness: {}'.format(self.state, self.rgb, self.brightness), level="DEBUG")
 
     def reset_light(self, kwargs):
-        self.log('Set {} to {} at {} brightness'.format(self.light, self.rgb, self.brightness))
+        self.log('Reset {} to {}, brightness: {}'.format(self.light, self.rgb, self.brightness))
         self.turn_on(self.light, rgb_color=self.rgb, brightness=self.brightness, transition=1)
         # turn off if it was off before
         if self.state == 'off':

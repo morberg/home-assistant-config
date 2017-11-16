@@ -5,10 +5,13 @@ Vardagsrum:
 Hallen:
   - light.hall
 
-Kök:
+Köksspot:
   - light.skarbrada
   - light.hyllor
   - light.klocka
+
+Kök:
+  - group.koksspot
   - light.koksbord
 
 Bottenvåning:
