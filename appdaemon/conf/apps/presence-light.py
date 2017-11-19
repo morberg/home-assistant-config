@@ -46,12 +46,12 @@ class PresenceLight(appapi.AppDaemon):
         self.log('{} is home, set {} to {}'.format(person, self.light, colors[person]))
         self.get_original_values() 
         # set to person color and max brightness
-        self.turn_on(self.light, color_name=colors[person], brightness=254, transition=1)
+        self.turn_on(self.light, color_name=colors[person], brightness=254, transition=2)
         # set to original rgb_color and brightness after 5 seconds
-        handle = self.run_in(self.reset_light, 5)
+        handle = self.run_in(self.reset_light, 8)
 
     def get_original_values(self):
-        self.state = self.get_state(self.light)
+        self.state = self.get_state(self.light) # is light on or off?
         # Turn on and save the rgb_color and brightness (not available if light was off)
         self.turn_on(self.light)
         # Need a delay otherwise values are still not available
@@ -65,6 +65,5 @@ class PresenceLight(appapi.AppDaemon):
     def reset_light(self, kwargs):
         self.log('Reset {} to {}, brightness: {}'.format(self.light, self.rgb, self.brightness))
         self.turn_on(self.light, rgb_color=self.rgb, brightness=self.brightness, transition=1)
-        # turn off if it was off before
         if self.state == 'off':
             self.turn_off(self.light)
