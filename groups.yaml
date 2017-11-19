@@ -25,16 +25,6 @@ Barnens rum:
   - light.disas_lampa
   - light.olles_lampa
 
-Hem:
-  view: yes
-  icon: mdi:home
-  entities:
-    - group.bottenvaning
-    - group.vardagsrum
-    - group.kok
-    - group.barnens_rum
-    - group.scenes
-
 Familj:
   view: yes
   entities:
@@ -43,10 +33,31 @@ Familj:
     - device_tracker.lindasiphone
     - device_tracker.disasiphone
 
-System:
+default_view:
+  view: yes
+  icon: mdi:home
+  entities:
+    - device_tracker.matrix # Niklas
+    - device_tracker.quack  # Olle
+    - device_tracker.lindasiphone
+    - device_tracker.disasiphone
+    - group.familj
+    - group.bottenvaning
+    - group.vardagsrum
+    - group.kok
+    - group.barnens_rum
+    - group.kallare
+    - group.scenes
+    - switch.flux
+
+Allt:
   view: yes
   entities:
+    - group.all_devices
     - group.all_automations
+    - group.all_scripts
+    - group.all_lights
+    - group.all_switches
 
 Scenes:
   view: no
