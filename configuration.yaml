@@ -60,7 +60,7 @@ sensor:
       - cloudiness
 
 apple_tv:
- - host: 192.168.1.134
+ - host: 192.168.1.135
    login_id: !secret apple-tv-login-id
 #   credentials: !secret apple-tv-credentials
    start_off: true
@@ -68,7 +68,7 @@ apple_tv:
 
 media_player:
   - platform: braviatv
-    host: 192.168.1.110
+    host: 192.168.1.120
     name: Sony TV
 
 device_tracker:
@@ -78,7 +78,7 @@ device_tracker:
     verify_ssl: False
     track_new_devices: false
 
-ios:
+#ios:
 
 switch: !include switch.yaml
 group: !include groups.yaml
