@@ -33,7 +33,7 @@ Familj:
     - device_tracker.lindasiphone
     - device_tracker.disasiphone
 
-default_view:
+Hem:
   view: yes
   icon: mdi:home
   entities:
