@@ -49,6 +49,8 @@ Hem:
     - group.kallare
     - group.scenes
     - switch.flux
+    - media_player.sony_tv
+    - media_player.apple_tv
 
 Allt:
   view: yes
