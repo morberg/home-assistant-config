@@ -4,7 +4,6 @@ AppDaemon:
   threads: 10
 HASS:
   ha_url: http://mini.local:8123
-#  ha_key: hhPilSnoHa
   ha_key: !secret api-password
 HADashboard:
   dash_url: http://mini.local:5050
