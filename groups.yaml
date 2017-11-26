@@ -11,12 +11,15 @@ Köksspot:
   - light.klocka
 
 Kök:
-  - group.koksspot
+  - light.skarbrada
+  - light.hyllor
+  - light.klocka
   - light.koksbord
 
 Bottenvåning:
   - group.vardagsrum
   - group.kok
+  - group.hallen
 
 Källare:
   - light.matkallare
@@ -45,6 +48,7 @@ Hem:
     - group.bottenvaning
     - group.vardagsrum
     - group.kok
+    - group.koksspot
     - group.barnens_rum
     - group.kallare
     - group.scenes
