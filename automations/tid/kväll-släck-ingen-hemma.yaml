@@ -1,7 +1,7 @@
-alias: "Tid: 10:30 -> Släck alla lampor på bottenvåning om ingen hemma"
+alias: "Tid: 23:00 -> Släck alla lampor på bottenvåning om ingen hemma"
 trigger:
   platform: time
-  at: '10:30:00'
+  at: '23:00:00'
 condition:
   condition: state
   entity_id: group.familj
