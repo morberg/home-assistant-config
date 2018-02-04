@@ -22,6 +22,10 @@ entities:
     state: on
     brightness: 1
     color_temp: 458.50527281063734
+  light.hall:
+    state: on
+    brightness: 1
+    color_temp: 457.66590389016017
   light.soffa:
     state: on
     brightness: 20
