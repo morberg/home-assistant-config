@@ -6,6 +6,7 @@
     - light.hyllor
     - light.klocka
     - light.hall
+    - light.soffa
   name: Flux
   start_time: '9:00'
   stop_time: '23:30'
