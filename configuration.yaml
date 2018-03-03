@@ -70,7 +70,7 @@ apple_tv:
 
 media_player:
   - platform: braviatv
-    host: 192.168.1.121
+    host: tva65bb9b97c3d
     name: Sony TV
 
 device_tracker:
