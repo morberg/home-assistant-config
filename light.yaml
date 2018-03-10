@@ -1,0 +1,6 @@
+- platform: group
+  name: Köksspot
+  entities:
+    - light.skarbrada
+    - light.hyllor
+    - light.klocka

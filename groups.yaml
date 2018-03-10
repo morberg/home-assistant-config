@@ -5,16 +5,12 @@ Vardagsrum:
 Hallen:
   - light.hall
 
-Köksspot:
-  - light.skarbrada
-  - light.hyllor
-  - light.klocka
-
 Kök:
+  - light.koksbord
+  - light.koksspot
   - light.skarbrada
   - light.hyllor
   - light.klocka
-  - light.koksbord
 
 Bottenvåning:
   - group.vardagsrum
@@ -35,26 +31,6 @@ Familj:
     - device_tracker.quack  # Olle
     - device_tracker.lindasiphone
     - device_tracker.disasiphone
-
-Hem:
-  view: yes
-  icon: mdi:home
-  entities:
-    - device_tracker.matrix # Niklas
-    - device_tracker.quack  # Olle
-    - device_tracker.lindasiphone
-    - device_tracker.disasiphone
-    - group.familj
-    - group.bottenvaning
-    - group.vardagsrum
-    - group.kok
-    - group.koksspot
-    - group.barnens_rum
-    - group.kallare
-    - group.scenes
-    - switch.flux
-    - media_player.sony_tv
-    - media_player.apple_tv
 
 Allt:
   view: yes

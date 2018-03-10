@@ -84,6 +84,7 @@ device_tracker:
 #ios:
 
 switch: !include switch.yaml
+light: !include light.yaml
 group: !include groups.yaml
 automation: !include_dir_list automations
 scene: !include_dir_list scenes

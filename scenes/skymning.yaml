@@ -15,7 +15,7 @@ entities:
     state: on
     brightness_pct: 25
     transition: 600
-  group.koksspot:
+  light.koksspot:
     state: on
     brightness_pct: 40
     transition: 600
