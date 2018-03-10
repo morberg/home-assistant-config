@@ -17,6 +17,7 @@ homeassistant:
 
 # Enables the frontend
 frontend:
+  javascript_version: es5
 
 # Enables configuration UI
 config:
