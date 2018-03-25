@@ -6,7 +6,8 @@ entities:
     state: on
     brightness_pct: 70
     rgb_color: [255, 198, 102]
-    transition: 600  # 600 seconds=10 minutes
+      # This sometimes makes the light go on at full brightness
+#    transition: 600  # 600 seconds=10 minutes
   light.matbord:
     state: on
     brightness_pct: 40

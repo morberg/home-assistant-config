@@ -45,6 +45,7 @@ discovery:
     - axis
     - plex_mediaserver
     - apple_tv
+    - songpal
 
 # Enables support for tracking state changes over time
 history:
@@ -78,10 +79,19 @@ device_tracker:
   - platform: unifi
     username: !secret unifi-user
     password: !secret unifi-password
-    verify_ssl: False
+    verify_ssl: false
     track_new_devices: false
 
-#ios:
+homekit:
+  auto_start: false
+  filter:
+    exclude_entities:
+      - light.disas_rum
+      - light.olles_rum
+      - light.anarkister
+      - light.kallare
+      - light.kok
+      - light.vardagsrum
 
 switch: !include switch.yaml
 light: !include light.yaml
