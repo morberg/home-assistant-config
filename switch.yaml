@@ -15,3 +15,42 @@
   stop_colortemp: 2400
   disable_brightness_adjust: True
   mode: mired
+
+# Temporary workaround until scenes are supported in homekit integration
+- platform: template
+  switches:
+    mysljus:
+      value_template: "{{ is_state('scene.mysljus', 'on') }}"
+      turn_on:
+        service: scene.turn_on
+        data:
+          entity_id: scene.mysljus
+      # Not used, but required for switch
+      turn_off:
+        service: scene.turn_off
+        data:
+          entity_id: scene.mysljus
+
+    skymning:
+      value_template: "{{ is_state('scene.skymning', 'on') }}"
+      turn_on:
+        service: scene.turn_on
+        data:
+          entity_id: scene.skymning
+      # Not used, but required for switch
+      turn_off:
+        service: scene.turn_off
+        data:
+          entity_id: scene.mysljus
+
+    morgon:
+      value_template: "{{ is_state('scene.morgon', 'on') }}"
+      turn_on:
+        service: scene.turn_on
+        data:
+          entity_id: scene.morgon
+      # Not used, but required for switch
+      turn_off:
+        service: scene.turn_off
+        data:
+          entity_id: scene.mysljus
