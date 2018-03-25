@@ -86,6 +86,7 @@ homekit:
   auto_start: false
   filter:
     exclude_entities:
+      # Kommer från rummen i Trådfri-appen
       - light.disas_rum
       - light.olles_rum
       - light.anarkister
