@@ -4,5 +4,5 @@ trigger:
   event: start
 
 action:
-  - delay: 0:01 # 1 minute
+  - delay: 0:00:30 # 30 seconds
   - service: homekit.start
