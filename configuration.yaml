@@ -85,6 +85,8 @@ device_tracker:
 homekit:
   auto_start: false
   filter:
+    exclude_domains:
+      - sensor
     exclude_entities:
       # Kommer från rummen i Trådfri-appen
       - light.disas_rum
@@ -94,6 +96,11 @@ homekit:
       - light.kok
       - light.vardagsrum
 
+logger:
+  default: info
+  logs:
+    homeassistant.components.homekit: debug
+    
 switch: !include switch.yaml
 light: !include light.yaml
 group: !include groups.yaml
