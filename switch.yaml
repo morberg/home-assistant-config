@@ -41,7 +41,7 @@
       turn_off:
         service: scene.turn_off
         data:
-          entity_id: scene.mysljus
+          entity_id: scene.skymning
 
     morgon:
       value_template: "{{ is_state('scene.morgon', 'on') }}"
@@ -53,4 +53,4 @@
       turn_off:
         service: scene.turn_off
         data:
-          entity_id: scene.mysljus
+          entity_id: scene.morgon
