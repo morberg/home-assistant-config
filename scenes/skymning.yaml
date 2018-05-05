@@ -6,21 +6,21 @@ entities:
     state: on
     brightness_pct: 70
     rgb_color: [255, 198, 102]
-      # This sometimes makes the light go on at full brightness
+# Transition seems broken at the moment
 #    transition: 600  # 600 seconds=10 minutes
   light.matbord:
     state: on
     brightness_pct: 40
-    transition: 600
+#    transition: 600
   light.hall:
     state: on
     brightness_pct: 25
-    transition: 600
+#    transition: 600
   light.koksspot:
     state: on
     brightness_pct: 40
-    transition: 600
+#    transition: 600
   light.koksbord:
     state: on
     brightness_pct: 50
-    transition: 600
+#    transition: 600
