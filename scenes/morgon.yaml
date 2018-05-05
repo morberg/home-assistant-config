@@ -14,8 +14,8 @@ entities:
     color_temp: 382
   light.soffa:
     state: on
-    brightness: 33
-    color_temp: 413
+    brightness_pct: 15
+    rgb_color: [255, 155, 62]
   light.koksbord:
     state: on
     brightness_pct: 20
