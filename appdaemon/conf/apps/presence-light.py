@@ -19,9 +19,8 @@ class PresenceLight(hass.Hass):
         self.listen_state(self.presence_change, "device_tracker")
        
     def presence_change(self, tracker, attribute, old, new, kwargs):
-        self.log('Tracker: {}, attribute: {}, old: {}, new: {}'.format(tracker, attribute, old, new))
         if old != new:
-#            self.log('State change: {} -> {}'.format(old, new))
+            self.log('Tracker: {}, attribute: {}, old: {}, new: {}'.format(tracker, attribute, old, new))
             if new == 'home':
                 self.someone_has_arrived(tracker)
     
@@ -58,8 +57,8 @@ class PresenceLight(hass.Hass):
         # Using time.sleep although documentation recommends against it.
         # See https://github.com/home-assistant/appdaemon/issues/26
         time.sleep(0.1)
-        self.rgb = self.get_state(self.light, 'rgb_color')
-        self.brightness = self.get_state(self.light, 'brightness')
+        self.rgb = self.get_state(self.light, attribute='rgb_color')
+        self.brightness = self.get_state(self.light, attribute='brightness')
         self.log('Original values: {}, RGB: {}, brightness: {}'.format(self.state, self.rgb, self.brightness), level="DEBUG")
 
     def reset_light(self, kwargs):
