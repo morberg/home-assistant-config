@@ -1,4 +1,4 @@
-import appdaemon.appapi as appapi
+import appdaemon.plugins.hass.hassapi as hass
 import time
 #
 # Presence light
@@ -8,7 +8,7 @@ import time
 # light: which main light to turn on momentarily when someone arrives
 # delay: number of seconds to wait before switching off light
 
-class PresenceLight(appapi.AppDaemon):
+class PresenceLight(hass.Hass):
 
     def initialize(self):
         self.log('Available trackers')

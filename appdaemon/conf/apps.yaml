@@ -1,9 +1,0 @@
-hello_world:
-  module: hello
-  class: HelloWorld
-
-presence_light:
-  module: presence-light
-  class: PresenceLight
-  light: light.hall
-  delay: 180 # seconds

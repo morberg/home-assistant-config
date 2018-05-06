@@ -1,14 +1,15 @@
-AppDaemon:
+appdaemon:
   logfile: STDOUT
   errorfile: STDERR
   threads: 10
-HASS:
-  ha_url: https://morberg.duckdns.org:8123
-  ha_key: !secret api-password
-HADashboard:
+  plugins:
+    HASS:
+      type: hass
+      ha_url: https://morberg.duckdns.org:8123
+      ha_key: !secret api-password
+hadashboard:
   dash_url: http://mini.local:5050
 # Apps
 hello_world:
   module: hello
   class: HelloWorld
-
