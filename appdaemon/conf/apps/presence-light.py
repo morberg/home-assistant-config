@@ -6,7 +6,7 @@ import time
 # Args:
 #
 # light: which main light to turn on momentarily when someone arrives
-# delay: number of seconds to wait before switching off light
+# duration: number of seconds to keep light turned on
 
 class PresenceLight(hass.Hass):
 
@@ -27,13 +27,13 @@ class PresenceLight(hass.Hass):
     
     def someone_has_arrived(self, tracker):
         self.log('{} has arrived home'.format(self.friendly_name(tracker)))
-        self.turn_on_light(self.args['light'], self.args['delay'])
+        self.turn_on_light(self.args['light'], self.args['duration'])
         self.color_light(tracker)
     
-    def turn_on_light(self, light, delay):
-        self.log('Turn on {} for {} seconds'.format(light, delay))
+    def turn_on_light(self, light, duration):
+        self.log('Turn on {} for {} seconds'.format(light, duration))
         self.turn_on(light)
-        handle = self.run_in(self.turn_off_light, delay, light=light)
+        handle = self.run_in(self.turn_off_light, duration, light=light)
     
     def turn_off_light(self, kwargs):
         light = kwargs['light']

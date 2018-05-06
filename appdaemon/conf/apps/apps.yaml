@@ -6,4 +6,4 @@ presence_light:
   module: presence-light
   class: PresenceLight
   light: light.hall
-  delay: 180 # seconds
+  duration: 180 # seconds
