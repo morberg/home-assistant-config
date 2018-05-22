@@ -1,0 +1,14 @@
+name: Skymning2
+entities:
+  switch.flux:
+    state: on
+  light.soffa:
+    state: on
+    brightness_pct: 70
+    rgb_color: [255, 198, 102]
+  light.koksspot:
+    state: on
+    brightness_pct: 40
+  light.koksbord:
+    state: on
+    brightness_pct: 50

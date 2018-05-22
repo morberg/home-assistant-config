@@ -98,9 +98,9 @@ homekit:
 
 logger:
   default: info
-  logs:
-    homeassistant.components.homekit: debug
-    pyhap: debug
+#  logs:
+    #    homeassistant.components.homekit: debug
+#    pyhap: debug
     
 switch: !include switch.yaml
 light: !include light.yaml

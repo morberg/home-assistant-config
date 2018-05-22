@@ -10,5 +10,5 @@ condition:
 action:
   service: scene.turn_on
   data_template:
-    entity_id: "{% if is_state(\"media_player.sony_tv\", \"on\") %}\n  scene.play\n\
+    entity_id: "{% if is_state(\"media_player.sony_tv\", \"on\") %}\n  scene.skymning2\n\
     {% else %}\n  scene.skymning\n{% endif %}\n"
