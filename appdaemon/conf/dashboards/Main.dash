@@ -12,6 +12,12 @@ global_parameters:
     use_hass_icon: 1
     time_format: 24hr
 
+media_player:
+    widget_type: media_player
+    title: Apple TV
+    entity: media_player.apple_tv
+    step: 5
+
 layout:
   - clock.clock (2x1), device_tracker.lindasiphone, device_tracker.matrix, device_tracker.disasiphone, device_tracker.quack
   - group.vardagsrum, light.hall, light.soffa, light.matbord, light.disas_lampa, light.olles_lampa
