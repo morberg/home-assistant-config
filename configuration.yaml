@@ -83,18 +83,25 @@ device_tracker:
     track_new_devices: false
 
 homekit:
-  auto_start: false
+  auto_start: False
   filter:
-    exclude_domains:
-      - sensor
+    include_domains:
       - light
+    include_entities:
+      - switch.flux
+    exclude_entities:
+      # Kommer från rummen i Trådfri-appen
+      - light.disas_rum
+      - light.olles_rum
+      - light.anarkister
+      - light.kallare
+      - light.kok
+      - light.vardagsrum
 
 logger:
   default: info
   logs:
     homeassistant.components.device_tracker: error
-    #    homeassistant.components.homekit: debug
-#    pyhap: debug
     
 switch: !include switch.yaml
 light: !include light.yaml
