@@ -6,5 +6,5 @@ trigger:
 action:
   service: scene.turn_on
   data_template:
-    entity_id: "{% if is_state(\"media_player.sony_tv\", \"on\") %}\n  scene.skymning2\n\
+    entity_id: "{% if is_state(\"media_player.sony_tv\", \"on\") %}\n  scene.skymning-tv\n\
     {% else %}\n  scene.skymning\n{% endif %}\n"
