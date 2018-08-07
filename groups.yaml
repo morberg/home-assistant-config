@@ -44,10 +44,10 @@ Allt:
 Scenes:
   view: no
   entities:
-    - scene.skymning
-    - scene.skymning-tv
     - scene.morgon
     - scene.mysljus
+    - scene.skymning
+    - scene.skymningtv
     - scene.play
     - scene.paus
 
