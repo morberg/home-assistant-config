@@ -45,6 +45,7 @@ Scenes:
   view: no
   entities:
     - scene.skymning
+    - scene.skymning-tv
     - scene.morgon
     - scene.mysljus
     - scene.play
