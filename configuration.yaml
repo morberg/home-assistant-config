@@ -86,22 +86,13 @@ homekit:
   auto_start: False
   filter:
     include_domains:
-      - light
-    include_entities:
-      - switch.flux
-    exclude_entities:
-      # Kommer från rummen i Trådfri-appen
-      - light.disas_rum
-      - light.olles_rum
-      - light.anarkister
-      - light.kallare
-      - light.kok
-      - light.vardagsrum
+      - switch
 
 logger:
   default: warning
   logs:
     homeassistant.components.device_tracker: error
+    homeassistant.components.homekit: info
     
 switch: !include switch.yaml
 light: !include light.yaml
