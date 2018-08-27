@@ -12,3 +12,6 @@ action:
   data_template:
     entity_id: "{% if is_state(\"media_player.sony_tv\", \"on\") %}\n  scene.skymningtv\n\
     {% else %}\n  scene.skymning\n{% endif %}\n"
+  service: input_boolean.turn_on
+  data:
+    entity_id: input_boolean.evening_lights_turned_on

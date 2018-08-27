@@ -7,3 +7,5 @@ action:
     entity_id: group.bottenvaning
   - service: homeassistant.turn_off
     entity_id: switch.flux
+  - service: homeassistant.turn_off
+    entity_id: input_boolean.evening_lights_turned_on

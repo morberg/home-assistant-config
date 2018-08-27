@@ -82,6 +82,12 @@ device_tracker:
     verify_ssl: false
     track_new_devices: false
 
+input_boolean:
+  evening_lights_turned_on:
+    name: Lamporna har tänts
+    initial: off
+    icon: mdi:lamp
+
 homekit:
   auto_start: False
   filter:
