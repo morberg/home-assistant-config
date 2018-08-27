@@ -4,6 +4,5 @@ trigger:
   event: start
 
 action:
-  service: switch.turn_on
-  data:
-    entity_id: switch.flux
+  service: homeassistant.turn_on
+  entity_id: switch.flux
