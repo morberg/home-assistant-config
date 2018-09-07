@@ -3,7 +3,7 @@ entities:
   switch.fluxtv: off
   light.tvsoffa:
     state: on
-    rgb_color: [255, 168, 91]
+    rgb_color: [255, 0, 0]
     brightness_pct: 1
   light.matbord:
     state: off
