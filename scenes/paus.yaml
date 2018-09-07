@@ -1,5 +1,8 @@
 name: Paus
 entities:
+  switch.fluxtv: on
   light.matbord:
     state: on
     brightness_pct: 50
+  light.soffa:
+    brightness_pct: 30

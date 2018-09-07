@@ -16,6 +16,18 @@
   disable_brightness_adjust: True
   mode: mired
 
+- platform: flux
+  lights:
+    - light.tvsoffa
+  name: Flux-TV
+  start_time: '9:00'
+  stop_time: '23:30'
+  start_colortemp: 3500
+  sunset_colortemp: 2800
+  stop_colortemp: 2400
+  disable_brightness_adjust: True
+  mode: mired
+
 # Temporary workaround until scenes are supported in homekit integration
 - platform: template
   switches:

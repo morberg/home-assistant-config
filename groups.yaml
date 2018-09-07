@@ -2,6 +2,9 @@ Vardagsrum:
   - light.soffa
   - light.matbord
 
+TV-rum:
+  - light.tvsoffa
+
 Hallen:
   - light.hall
 

@@ -4,4 +4,6 @@ trigger:
   at: '12:00:00'
 action:
   service: homeassistant.turn_on
-  entity_id: switch.flux
+  entity_id:
+    - switch.flux
+    - switch.fluxtv

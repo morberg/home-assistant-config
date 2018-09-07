@@ -1,33 +1,36 @@
 name: Mysljus
 entities:
-  switch.flux:
-    state: off
+  switch.flux: off
+  switch.fluxtv: off
   light.koksbord:
     state: on
     brightness: 63
-    color_temp: 454.54545454545456
+    color_temp: 457
   light.matbord:
     state: on
     brightness: 20
-    color_temp: 454.54545454545456
+    color_temp: 457
   light.hyllor:
     state: on
     brightness: 1
-    color_temp: 457.66590389016017
+    color_temp: 457
   light.skarbrada:
     state: on
     brightness: 1
-    color_temp: 458.50527281063734
+    color_temp: 457
   light.klocka:
     state: on
     brightness: 1
-    color_temp: 458.50527281063734
+    color_temp: 457
   light.hall:
     state: on
     brightness: 1
-    color_temp: 457.66590389016017
+    color_temp: 457
   light.soffa:
     state: on
     brightness: 167
-    #rgb_color: [231,136,52]
-    color_temp: 454
+    color_temp: 457
+  light.tvsoffa:
+    state: on
+    rgb_color: [255, 168, 91]
+    brightness_pct: 1

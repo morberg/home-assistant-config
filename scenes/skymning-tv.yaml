@@ -1,3 +1,9 @@
 name: Skymning-TV
 entities:
   scene.common: on
+  switch.fluxtv: off
+  light.tvsoffa:
+    state: on
+    rgb_color: [255, 168, 91]
+    brightness_pct: 1
+
