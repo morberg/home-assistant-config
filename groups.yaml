@@ -40,14 +40,4 @@ Allt:
     - group.all_scripts
     - group.all_lights
     - group.all_switches
-
-Scenes:
-  view: no
-  entities:
-    - scene.morgon
-    - scene.mysljus
-    - scene.skymning
-    - scene.skymningtv
-    - scene.play
-    - scene.paus
-
+    - group.all_scenes
