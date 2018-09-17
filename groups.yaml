@@ -19,6 +19,7 @@ Bottenvåning:
   - group.vardagsrum
   - group.kok
   - group.hallen
+  - group.tvrum
 
 Källare:
   - light.matkallare

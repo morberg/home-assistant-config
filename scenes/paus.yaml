@@ -5,4 +5,5 @@ entities:
     state: on
     brightness_pct: 50
   light.soffa:
-    brightness_pct: 30
+    state: on
+    brightness_pct: 50

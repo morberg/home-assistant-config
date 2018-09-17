@@ -1,14 +1,4 @@
 name: Skymning-TV
 entities:
   scene.common: on
-  switch.fluxtv: off
-  light.tvsoffa:
-    state: on
-    rgb_color: [255, 0, 0]
-    brightness_pct: 1
-  light.soffa:
-    state: on
-    brightness_pct: 10
-    transition: 5 #seconds
-  light.matbord: off
-
+  scene.play: on

@@ -5,7 +5,7 @@ entities:
     state: on
     rgb_color: [255, 0, 0]
     brightness_pct: 1
-  light.matbord:
-    state: off
-  light.hall:
-    state: off
+  light.matbord: off
+  light.soffa:
+    state: on
+    brightness_pct: 10
