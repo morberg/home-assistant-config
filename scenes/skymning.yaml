@@ -2,6 +2,10 @@ name: Skymning
 entities:
   scene.common: on
   switch.fluxtv: on
+  light.soffa:
+    state: on
+    brightness_pct: 50
+    transition: 60 #seconds
   light.tvsoffa:
     state: on
     brightness_pct: 40

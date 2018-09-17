@@ -1,10 +1,6 @@
 name: Common
 entities:
   switch.flux: on
-  light.soffa:
-    state: on
-    brightness_pct: 50
-    transition: 60 #seconds
   light.koksspot:
     state: on
     brightness_pct: 40
