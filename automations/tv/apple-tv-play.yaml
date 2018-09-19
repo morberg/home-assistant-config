@@ -2,7 +2,6 @@ alias: "TV: Apple TV play (efter solnedgång)"
 trigger:
   platform: state
   entity_id: media_player.apple_tv
-  from: paused
   to: playing
 condition:
   condition: sun
