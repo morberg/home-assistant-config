@@ -1,0 +1,11 @@
+alias: "Pausa Sonos"
+trigger:
+  platform: state
+  entity_id: media_player.apple_tv
+  to: playing
+
+action:
+  service: media_player.media_pause
+  entity_id:
+    - media_player.kitchen
+    - media_player.living_room
