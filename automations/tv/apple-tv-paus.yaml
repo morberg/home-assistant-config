@@ -1,4 +1,4 @@
-alias: "TV: Apple TV paus (efter solnedgång)"
+alias: "TV: Apple TV paus"
 trigger:
   platform: state
   entity_id: media_player.apple_tv
