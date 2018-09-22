@@ -1,3 +1,6 @@
 name: Natt
 entities:
   group.bottenvaning: off
+  input_boolean.evening_lights_turned_on: off
+  switch.flux: off
+  switch.fluxtv: off
