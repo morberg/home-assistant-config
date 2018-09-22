@@ -32,37 +32,31 @@
 - platform: template
   switches:
     mysljus:
+      friendly_name: Mysljus
       value_template: "{{ is_state('scene.mysljus', 'on') }}"
       turn_on:
         service: scene.turn_on
-        data:
-          entity_id: scene.mysljus
-      # Not used, but required for switch
+        entity_id: scene.mysljus
       turn_off:
-        service: scene.turn_off
-        data:
-          entity_id: scene.mysljus
+        service: switch.turn_off
+        entity_id: switch.mysljus
 
     skymning:
+      friendly_name: Skymning
       value_template: "{{ is_state('scene.skymning', 'on') }}"
       turn_on:
         service: scene.turn_on
-        data:
-          entity_id: scene.skymning
-      # Not used, but required for switch
+        entity_id: scene.skymning
       turn_off:
-        service: scene.turn_off
-        data:
-          entity_id: scene.skymning
+        service: switch.turn_off
+        entity_id: switch.skymning
 
     morgon:
       value_template: "{{ is_state('scene.morgon', 'on') }}"
+      friendly_name: Godmorgon
       turn_on:
         service: scene.turn_on
-        data:
-          entity_id: scene.morgon
-      # Not used, but required for switch
+        entity_id: scene.morgon
       turn_off:
-        service: scene.turn_off
-        data:
-          entity_id: scene.morgon
+        service: switch.turn_off
+        entity_id: switch.morgon
