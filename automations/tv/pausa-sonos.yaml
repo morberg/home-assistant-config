@@ -1,4 +1,4 @@
-alias: "Pausa Sonos"
+alias: "TV: Pausa Sonos"
 trigger:
   platform: state
   entity_id: media_player.apple_tv
