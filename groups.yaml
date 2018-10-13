@@ -4,7 +4,7 @@ Vardagsrum:
 
 TV-rum:
   - light.tvsoffa
-  - light.bollampa
+  - switch.bollampa
 
 Hallen:
   - light.hall

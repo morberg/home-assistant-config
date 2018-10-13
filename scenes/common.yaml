@@ -9,5 +9,5 @@ entities:
     state: on
     brightness_pct: 50
     transition: 60
-  light.bollampa: on
+  switch.bollampa: on
   input_boolean.evening_lights_turned_on: on
