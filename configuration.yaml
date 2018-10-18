@@ -79,7 +79,6 @@ media_player:
 input_boolean:
   evening_lights_turned_on:
     name: Lamporna har tänts
-    initial: off
     icon: mdi:lamp
 
 homekit:
