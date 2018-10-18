@@ -73,8 +73,8 @@ media_player:
 #    verify_ssl: false
 #    track_new_devices: false
 
-#tradfri:
-#  host: 192.168.1.11
+tradfri:
+  host: 192.168.1.11
 
 input_boolean:
   evening_lights_turned_on:
