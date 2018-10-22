@@ -3,6 +3,7 @@ trigger:
   platform: state
   entity_id: media_player.apple_tv
   from: playing
+  to: paused
 condition:
   condition: state
   entity_id: input_boolean.evening_lights_turned_on
