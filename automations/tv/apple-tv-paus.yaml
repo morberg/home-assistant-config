@@ -1,9 +1,13 @@
 alias: "TV: Apple TV paus"
 trigger:
-  platform: state
-  entity_id: media_player.apple_tv
-  from: playing
-  to: paused
+  - platform: state
+    entity_id: media_player.apple_tv
+    from: playing
+    to: paused
+  - platform: state
+    entity_id: media_player.apple_tv
+    from: playing
+    to: idle
 condition:
   condition: state
   entity_id: input_boolean.evening_lights_turned_on

@@ -82,12 +82,6 @@ input_boolean:
 
 tradfri:
   host: 192.168.1.11
-
-logger:
-  default: warning
-  logs:
-    homeassistant.components.device_tracker: error
-    homeassistant.components.homekit: info
     
 switch: !include switch.yaml
 light: !include light.yaml
