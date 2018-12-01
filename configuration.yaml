@@ -62,9 +62,14 @@ sensor:
       - symbol
       - precipitation
       - cloudiness
+sonos:
+  media_player:
+    hosts:
+      - 192.168.1.114
+      - 192.168.1.116
 
 apple_tv:
- - host: 192.168.1.154
+ - host: 192.168.1.115
    login_id: !secret apple-tv-login-id
 #   credentials: !secret apple-tv-credentials
    start_off: true
@@ -72,7 +77,7 @@ apple_tv:
 
 media_player:
   - platform: braviatv
-    host: sony-tv
+    host: 192.168.1.130 
     name: Sony TV
 
 input_boolean:
